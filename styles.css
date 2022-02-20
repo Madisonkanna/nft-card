@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--main-bg);
+}
+
+.card {
+  position: relative;
+  background-color: var(--card-bg);
+  width: 450px;
+  padding: 25px 25px;
+  border-radius: 2%;
+  margin: 50px auto;
+  font-weight: 300;
+  line-height: 26px;
+  color: #8bacd9;
+}
+
+.card h2 {
+  font-weight: 600;
+  color: var(--white);
+  font-size: 22px;
+  line-height: 28px;
+  margin: 20px 0 10px 0;
+}
+
+.card h2:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.nft-image {
+  width: 100%;
+  position: relative;
+  border-radius: 2%;
+}
+
+.img-overlay {
+  position: absolute;
+  background-color: var(--cyan);
+  width: 400px;
+  height: 400px;
+  top: 25px;
+  left: 25px;
+  opacity: 0;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-overlay:hover {
+  opacity: 0.6;
+  transition: 1s;
+}
+
+img-overlay img {
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  margin: 15px 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}
+
+.time,
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price:first-child {
+  color: var(--cyan);
+}
+
+.time img,
+.price img {
+  margin-right: 5px;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.creator img {
+  width: 40px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.creator span {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.creator span:hover {
+  color: var(--cyan);
+}
